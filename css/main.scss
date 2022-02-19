@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    height: 100vh;
+    margin:0;
+    font-family: 'poppins', 'arial';
+}
+
+// css reset work ==>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+// css reset block end
+.nav-container {
+    background: #9C0F48;
+
+    a {
+        color: #fff;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+
+    .logo {
+        color: #FCD6BA;
+        font-weight: bold;
+    }
+
+    ul {
+        display: flex;
+
+        a {
+            display: block;
+            padding: 0 1em;
+        }
+    }
+}
+
+.social-header, .hero-design {
+    display: none;
+}
+.hero {
+    background: #9C0F48;
+    color: #fff;
+    display: grid;
+    text-align: center;
+    padding: 4em;
+}
+
+.meet {
+    display: flex;
+    margin: 0 auto;
+    color: #FCD6BA;
+    font-weight: bold;
+    width: 200px;
+
+    span {
+        margin-top: 1em;
+        margin-right: 0.5em;
+    }
+
+}
+.scroll {
+      width: 30px;
+      margin-top: 2em;  
+}
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.featured {
+    position: relative;
+}
+.featured::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #E5D5FA;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#9C0F48;
+    letter-spacing: 0.2em;
+    font-size: 0.85em;
+}
+
+.featured-title {
+    color: #000;
+    font-weight: bold;
+    display: block;
+    font-size: 1.3em;
+    margin-top: -0.4em;
+}
+
+.featured-desc {
+    color: #3b3b3b;
+    line-height: 1.8em;
+    margin-bottom: 3em;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.skills {
+    background-color: #FCD6BA;
+}
+
+.skills-container ul li {
+    background: #fff;
+    padding: 2em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+
+    .icon-container {
+        height: 100px;
+        display: grid;
+        place-content: center;
+        margin: 0 auto;
+
+        &.one {
+            width: 50px;
+        }
+        &.two {
+            width: 50px;
+        }
+        &.three {
+            width: 50px;
+        }
+
+        .skill-title {
+            font-weight: bold;
+        }
+
+        .featured-desc {
+            margin-bottom: 2em;
+        }
+    }
+}
+
+.portfolio {
+    background: #F7F7F7;
+}
+
+.portfolio-container-mid a img, .portfolio-container a img {
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+footer {
+    background: #9C0F48;
+    height: 40px;
+}
+
+@media only screen and (min-width: 800px) {
+    .featured, .portfolio {
+        text-align-last: left;
+    }
+
+    .featured, .portfolio-container {
+        display: grid;
+        grid-template-columns: 42% auto;
+    }
+
+    .portfolio-container-mid {
+        display: grid;
+        grid-template-columns: 58% auto;
+    }
+
+    .left, .portfolio-left {
+        display: grid;
+        place-content: center;
+    }
+
+    .portfolio-right {
+        display: grid;
+        place-content: center;
+        margin-left: 2em;
+    }
+
+    .right {
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+
+    .skills {
+        margin-top: -5em;
+        margin-bottom: -7em;
+        padding-top: 7em;
+    }
+
+    .skills-container ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1em;
+    }
+
+    .portfolio {
+        padding-top: 7em;
+    }
+
+    .portfolio-container img {
+        margin-left: 2em;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    // .hero {
+    //     height: 90vh;
+    // }
+
+    .nav-container {
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+
+        header {
+            background: #9C0F48;
+        }
+    }
+
+    header {
+        padding: 2em 2em 2em 4em;
+    }
+
+    .social-header {
+        padding: 2em 4em 2em 0;
+    }
+
+    section {
+        padding: 4em;
+    }
+
+    .social-header {
+        display: block;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 7em;
+            float: right;
+
+            img {
+                width: 20px;
+            }
+        }
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+        padding: 0;
+
+        .content {
+            background: #9C0F48;
+            padding: 6em 8em 6em 4em;
+            text-align-last: left;
+
+            h1 {
+                font-style: 3em;
+                line-height: 1.2em;
+            }
+        }
+        .meet {
+            margin: unset;
+        }
+
+        .hero-design {
+            display: unset;
+            margin-left: -50%;
+            margin-top: 15%;
+            width: 100%;
+        }
+
+        .portfolio img {
+            float: right;
+            min-width: 500px;
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 1250px) {
+    header {
+        padding:  2em 2em 2em 10em;
+    }
+    .social-header {
+        padding: 2em 10em 2em 0;
+    }
+    section {
+        padding: 10em 10em 4em 10em;
+    }
+    .hero, .content {
+        padding: 6em 8em 6em 10em;
+    }
+}
+
+@media only screen and (min-width: 1550px) {
+    header {
+        padding:  2em 2em 2em 20em;
+    }
+    .social-header {
+        padding: 2em 20em 2em 0;
+    }
+    section {
+        padding: 6em 20em 4em 20em;
+    }
+    .hero, .content {
+        padding: 9em 20em 6em 20em;
+    }
+}
+
+.circle {
+    animation: circleAnim 1.5s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+    from {
+        transform: translate(0px, 0px);
+        z-index: 5;
+    }
+    to {
+        transform: translate(0px, 30px);
+    }
+}
