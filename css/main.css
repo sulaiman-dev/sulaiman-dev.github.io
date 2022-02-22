@@ -21,6 +21,7 @@ img {
 
 .nav-container {
   background: #9C0F48;
+  opacity: 0.89;
 }
 
 .nav-container a {
@@ -129,6 +130,7 @@ section {
   margin-bottom: 3em;
   font-size: 0.9em;
   font-weight: 500;
+  text-align: start;
 }
 
 .skills {
@@ -175,13 +177,69 @@ section {
 }
 
 .portfolio-container-mid a img, .portfolio-container a img {
-  border-radius: 1em;
+  border-radius: .5em;
   margin-bottom: 2em;
+}
+
+#hire-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+}
+
+#hire-me button {
+  border: none;
+  font-weight: bold;
+  color: #ffffff;
+  background: black;
+  border-radius: .5em;
 }
 
 footer {
   background: #9C0F48;
-  height: 40px;
+  padding: .1em 2em .1em 2em;
+  text-align: center;
+  line-height: 40px;
+  opacity: 0.89;
+}
+
+footer a {
+  color: #e6a170;
+  text-decoration: none;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.see-more {
+  text-align: center;
+  margin: 40px;
+}
+
+.see-more a {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 9px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #9C0F48;
+  margin-bottom: 15px;
+  border: 1px solid transparent;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.see-more a:hover {
+  color: #9C0F48;
+  background: #fff;
+  border: 1px solid #9C0F48;
 }
 
 @media only screen and (min-width: 800px) {
@@ -214,6 +272,7 @@ footer {
   .right {
     margin-top: 1em;
     margin-left: 2em;
+    border-radius: .5em;
   }
   .skills {
     margin-top: -5em;
@@ -283,6 +342,7 @@ footer {
     background: #9C0F48;
     padding: 6em 8em 6em 4em;
     text-align-last: left;
+    text-align: start;
   }
   .hero .content h1 {
     font-style: 3em;

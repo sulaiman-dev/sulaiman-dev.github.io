@@ -1,6 +1,6 @@
 <!-- ### Hi there 👋 -->
-<h1 align="center">🔭 Portfolio webpage</h1>
-<h4 align="center">My personal portfolio web page build with, HTML, CSS and Javascript.</h4>
+<h1 align="center">Hi 👋, I'm Sulaiman</h1>
+<h3 align="center">A passionate javascript developer from Pakistan.</h3>
 
 <!-- <h3 align="left">Connect with me:</h3>
 <p align="left">
