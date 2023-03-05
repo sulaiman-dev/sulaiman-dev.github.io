@@ -53,7 +53,7 @@
 <!-- <table>
 <tr>
   <td valign="center">
-    - 🔭 I’m currently working as a ReactJS Developer at iPlex PVT. Limited.
+    - 🔭 I’m currently working as a Full Stack (MERN) Engineer at Productbox.
   </td>
 <td >
   <a href="https://app.daily.dev/sulaiman"><img src="https://api.daily.dev/devcards/7bf7791680784ebcaf50c03ae1145b1a.png?r=s8y" width="400" alt="Sulaiman's Dev Card"/></a>
